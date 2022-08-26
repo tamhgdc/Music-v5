@@ -52,7 +52,7 @@ function App() {
   const getSongList = async (category: MusicCategory) => {
     setIsLoading(true);
 
-    const res = await fetch("https://tinyurl.com/7frz2rdw");
+    const res = await fetch("https://api.apify.com/v2/key-value-stores/EJ3Ppyr2t73Ifit64/records/LATEST?fbclid=IwAR3lI6UNrh62He0eIZeVzJLiQ7fnUkqX7HAKUmrYwxiToUEuHxIXO8PDOwI");
     const { songs } = await res.json();
 
     const { name, index } = category;
